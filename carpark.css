@@ -1,0 +1,57 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: url(bg12.jpg) no-repeat;
+    background-size: cover;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    font-size: 80px;
+    
+}
+
+.parkinglot{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.parkinglot ul{
+    list-style: none;
+    text-align: center;
+}
+.parkinglot a li{
+    border: 1px solid black;
+    padding: 20px 200px 25px 200px;
+    margin: 20px;
+    align-items: center;
+    background-color: transparent;
+    color: white;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.parkinglot a{
+    text-decoration: none;
+}
+
+
+
+.parkinglot a li:hover{
+    transform: scale(1.001);
+    box-shadow: 0 0 5px #15B040,
+                0 0 10px #15B040,
+                0 0 15px #15B040,
+                0 0 20px #15B040,
+                0 0 30px #15B040,
+                0 0 35px #15B040;
+}
+
+.lotimage{
+    height: 5%;
+    width: 5%;
+}

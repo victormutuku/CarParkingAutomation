@@ -1,0 +1,72 @@
+@import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
+body{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: url(bg6.jpg) no-repeat;
+  background-size: cover;
+}
+.login-box{
+  width: 280px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: white;
+}
+.login-box h1{
+  float: left;
+  font-size: 40px;
+  border-bottom: 6px solid #E1C08F;
+  margin-bottom: 50px;
+  padding: 13px 0;
+}
+.textbox{
+  width: 100%;
+  overflow: hidden;
+  font-size: 20px;
+  padding: 8px 0;
+  margin: 8px 0;
+  border-bottom: 1px solid #E1C08F;
+}
+.textbox i{
+  width: 26px;
+  float: left;
+  text-align: center;
+}
+.textbox input{
+  border: none;
+  outline: none;
+  background: none;
+  color: #E1C08F;
+  font-size: 18px;
+  width: 80%;
+  float: left;
+  margin: 0 10px;
+}
+
+#btn1{
+	position: relative;
+	display: inline-block;
+	align-items: center;
+	padding-top: 35px 30px;
+	text-decoration: none;
+	letter-spacing: 4px;
+  font-size: 24px;
+  background: none;
+	text-transform: uppercase;
+	transition: 0.06s;
+	color: white;
+	margin: 40px;
+	
+	
+}
+#btn1:hover{
+	background: #17DDC5;
+	box-shadow: 0 0 5px #16BFD3,
+	            0 0 25px #16BFD3,
+	            0 0 50px #16BFD3,
+	            0 0 200px #16BFD3,
+	            0 0 250px #34E865,
+	            0 0 300px #34E865;
+}

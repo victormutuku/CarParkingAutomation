@@ -1,0 +1,330 @@
+body {
+	background: url(carbackground.jpg) no-repeat;
+	background-size: cover;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.navbar {
+	overflow: hidden;
+	background-color: #e9e9e9;
+}
+
+.navbar a {
+	float: left;
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 14px 16px; 
+	text-decoration: none;
+	font-size: 21px;
+	font-family: Impact, Charcoal, sans-serif;
+}
+
+.dropdown {
+	float: right;
+	overflow: hidden;
+}
+
+.dropdown .dropbtn {
+	cursor: pointer;
+	font-size: 16px;
+	border: none;
+	outline: none;
+	color: black;
+	padding: 14px 16px;
+	margin: 0;
+	font-family: Impact, Charcoal, sans-serif;
+	font-size: 21px;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+	background-color: #ddd;
+	color: black;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #ddd;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+}
+
+.dropdown-content a {
+	float: none;
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: inline-block;
+	text-align: left;
+	font-size: 18px;
+}
+
+.dropdown-content a:hover {
+	background-color: #D3D3D3;
+}
+
+.show {
+	display: block;
+}
+
+.navbar a.right {
+	float: right;
+}
+
+.navbar input[type=text]{
+	padding: 6px;
+	margin-top: 8px;
+	font-size: 17px;
+	border: none;
+}
+
+.polaroid +a {
+    background: #000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: inline-block;
+    margin: 55px 75px 30px;
+    padding: 15px 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+    -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+    -webkit-transition: all .20s linear;
+    -moz-transition: all .20s linear;
+    transition: all .20s linear;
+    z-index: 0;
+    position: absolute;
+    /*float: left;*/
+    margin: 2%;
+    border-radius: 25px;
+    width: 18%;
+}
+
+/*.polaroid a:after {
+    color: #fff;
+    font-size: 25px;
+    content: attr(title);
+    position: absolute;
+    top: 15px;
+}
+*/
+.polaroid img {
+    display: block;
+    width: 250px;
+}
+
+.polaroid a:hover {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    transform: scale(1.2);
+    z-index: 10;
+    -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
+    -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
+}
+
+
+/*the overlay background*/
+.overlay {
+	height: 0%;
+	width: 100%;
+	position: fixed; /*stay in place*/
+	z-index: 1; /*sit on top*/
+	top: 0;
+	left: 0;
+	background-color: rgb(0,0,0); /*black fallback color*/
+	background-color: rgba(0,0,0, 0.9); /*black w opacity*/
+	overflow-y: hidden; /*disable horizontal scroll*/ 
+	transition: 0.5s; /*0.5 second transition effect to slide in the overlay*/
+} 
+
+
+/*position the content inside the overlay*/
+.overlay-content {
+	position: relative;
+	top: 25%; /*25% from the top*/
+	width: 100%; /*100% width*/
+	text-align: center; /*centered text/links*/
+	margin-top: 30px; /*30px top margin to avoid conflict with the close button on smaller screens*/
+}
+
+
+.overlay-content +p {
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+}
+
+.overlay-content +input {
+	/*width: 50%;*/
+	margin-bottom: 20px;
+}
+
+.overlay-content input[type="text"], input[type="time"], input[type="number"]
+{
+	border: none;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color: #fff;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+
+.overlay-content input[type="submit"]
+{
+	border: none;
+	outline: none;
+	height: 40px;
+	background: #ba9c9c;
+	color: #fff;
+	font-size: 18px;
+	border-radius: 20px;
+}
+
+.overlay-content input[type="submit"]:hover
+{
+	cursor: pointer;
+	background: #e75480;
+	color: #000;
+}
+
+.overlay-content a {
+	text-decoration: none;
+	font-size: 12px;
+	line-height: 20px;
+	color: darkgrey;
+}
+
+.overlay-content a:hover {
+	color: #e75480;
+}
+
+.pagination_section { 
+    position: absolute; 
+    top: 500px; 
+    /*right: 230px;*/ 
+    font-size: 6px;
+} 
+
+.pagination_section +a { 
+	color: black; 
+    padding: 10px 18px; 
+    text-decoration: none; 
+} 
+
+.pagination_section a:hover { 
+	color: #e75480;
+}
+
+
+/*.overlay-contenttwo {
+	/*position: relative;
+	/*top: 25%; /*25% from the top*/
+	/*width: 100%; /*100% width*/
+	/*text-align: center; /*centered text/links*/
+	/*margin-top: 30px; /*30px top margin to avoid conflict with the close button on smaller screens*/
+}
+
+
+/*.overlay-contentthree {
+	/*position: relative;
+	/*top: 25%; /*25% from the top*/
+	/*width: 100%; /*100% width*/
+	/*text-align: center; /*centered text/links*/
+	/*margin-top: 30px; /*30px top margin to avoid conflict with the close button on smaller screens*/
+}
+
+
+/*.overlay-contentfour {
+	/*position: relative;
+	/*top: 25%; /*25% from the top*/
+	/*width: 100%; /*100% width*/
+	/*text-align: center; /*centered text/links*/
+	/*margin-top: 30px; /*30px top margin to avoid conflict with the close button on smaller screens*/
+}
+
+
+/*.overlay-contentfive {
+	/*position: relative;
+	/*top: 25%; /*25% from the top*/
+	/*width: 100%; /*100% width*/
+	/*text-align: center; /*centered text/links*/
+	/*margin-top: 30px; /*30px top margin to avoid conflict with the close button on smaller screens*/
+}
+
+
+/*.overlay-contentsix {
+	/*position: relative;
+	/*top: 25%; /*25% from the top*/
+	/*width: 100%; /*100% width*/
+	/*text-align: center; /*centered text/links*/
+	/*margin-top: 30px; /*30px top margin to avoid conflict with the close button on smaller screens*/
+}
+
+
+/*.overlay-contentseven {
+	/*position: relative;
+	/*top: 25%; /*25% from the top*/
+	/*width: 100%; /*100% width*/
+	/*text-align: center; /*centered text/links*/
+	/*margin-top: 30px; /*30px top margin to avoid conflict with the close button on smaller screens*/
+}
+
+
+/*.overlay-contenteight {
+	/*position: relative;
+	/*top: 25%; /*25% from the top*/
+	/*width: 100%; /*100% width*/
+	/*text-align: center; /*centered text/links*/
+	/*margin-top: 30px; /*30px top margin to avoid conflict with the close button on smaller screens*/
+}
+
+#myNav {
+	text-align: center;
+}
+
+/*the navigation links inside the overlay*/
+.overlay a {
+	padding: 8px;
+	text-decoration: none;
+	font-size: 36px;
+	color: #818181;
+	display: block; /*display block instead of inline*/
+	transition: 0.3s; /*transition effects on hover (color) */
+}
+
+/*when you mouse over the navigation links, change their color*/
+.overlay a:hover, .overlay a:focus {
+	color: #f1f1f1;
+}
+
+/*position the close button (top right corner)*/
+.overlay .closebtn {
+	position: absolute;
+	top: 20px;
+	right: 45px;
+	font-size: 60px;
+}
+
+@media screen and (max-width: 650px) {
+	.polaroid {
+		width: 96%;
+		margin: 2%;
+	}
+}
+
+/*when the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap*/
+@media screen and (max-height: 450px) {
+	.overlay {overflow-y: auto;}
+	.overlay a {font-size: 20px}
+	.overlay .closebtn {
+		font-size: 40px;
+		top: 15px;
+		right: 35px;
+	}
+}
